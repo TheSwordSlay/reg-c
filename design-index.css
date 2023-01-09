@@ -1,86 +1,80 @@
-  main ol {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    width: 100%;
-    position: static;
-    padding: 0;
-  }
-  
-  main li {
-    /* margin-left: 1rem;
-    margin-right: 1rem; */
-    margin: auto;
-    list-style: none;
-    font-family: "Fira Sans";
-    color: #6d0653;
-    font-size: medium;
-    background-color: rgb(255, 211, 15);
-    padding: 1.5rem;
-    padding-bottom: 4rem;
-    border: 5px solid rgb(0, 0, 0);
-    border-radius: 4px;
-    box-shadow: 5px 5px 5px rgb(105, 70, 66, 0.5);
-    /* width: 15rem; */
-    height: 20rem;
-    width: 90%;
-  }
+main ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  position: static;
+  padding: 0;
+}
 
-  li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    color: blue;
-  }
-  
-  /* main ol li:nth-of-type(4) {
-    grid-column: 1 / span 2;
+main li {
+  margin: auto;
+  list-style: none;
+  font-family: "Fira Sans";
+  color: #6d0653;
+  font-size: medium;
+  background-color: rgb(255, 211, 15);
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgb(105, 70, 66, 0.5);
+  height: 20rem;
+  width: 90%;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+li a:hover {
+  color: blue;
+}
+
+/* main ol li:nth-of-type(4) {
+  grid-column: 1 / span 2;
 } */
 
-  .Hari {
-    font-family: "Press Start 2P", sans-serif;
-    color: #1d1c1c;
-    margin-bottom: 20px;
-    font-size: large;
+.card-header {
+font-family: "Press Start 2P", sans-serif;
+color: #1d1c1c;
+font-size: large;
+}
+
+.kecilin {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1030px) {
+  main ol {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    padding: 0;
   }
 
-  .kecilin {
-    font-size: small;
+  main li{
+    width: 80%;
   }
 
-  @media (max-width: 1030px) {
-    main ol {
-      grid-template-columns: 1fr 1fr;
-      margin-left: 0;
-      padding: 0;
-    }
-
-    main li{
-      width: 80%;
-    }
-
-    main ol li:nth-of-type(4) {
-      grid-column: 1 / span 1;
-  }
-
-  main ol li:nth-of-type(3) {
+  main ol li:nth-of-type(4) {
     grid-column: 1 / span 1;
+}
+
+main ol li:nth-of-type(3) {
+  grid-column: 1 / span 1;
+}
+
+}
+
+@media (max-width: 48rem) {
+  main ol {
+    grid-template-columns: 100%;
   }
 
+  main li{
+    width: 80%;
   }
 
-  @media (max-width: 48rem) {
-    main ol {
-      grid-template-columns: 100%;
-    }
-
-    main li{
-      width: 80%;
-    }
-
-    main ol li:nth-of-type(4) {
-      grid-column: 1 / span 1;
-  }
-  }
+  main ol li:nth-of-type(4) {
+    grid-column: 1 / span 1;
+}
+}
